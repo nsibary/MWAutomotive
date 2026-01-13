@@ -56,7 +56,29 @@
     <section class="hero hero--v2 hero-image">
       <div class="container hero-v2-inner">
         <div class="hero-v2-copy">
+<div class="hero-socials">
+  <a href="https://www.instagram.com/mwautomotive2770/" target="_blank" aria-label="Instagram" class="hero-social-btn hero-social-instagram">
+    <svg viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.88a1.13 1.13 0 1 1 0 2.26 1.13 1.13 0 0 1 0-2.26z"/></svg>
+  </a>
 
+  <a href="https://m.facebook.com/61585345584741/" target="_blank" aria-label="Facebook" class="hero-social-btn hero-social-facebook">
+    <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.87v-6.99h-2.5V12h2.5V9.8c0-2.47 1.47-3.83 3.72-3.83 1.08 0 2.2.2 2.2.2v2.42h-1.24c-1.22 0-1.6.76-1.6 1.54V12h2.72l-.43 2.88h-2.29v6.99A10 10 0 0 0 22 12z"/></svg>
+  </a>
+
+  <a href="https://www.tiktok.com/@mwautomotive2770?_r=1&_t=ZS-92G9xFlZWYD" target="_blank" aria-label="TikTok" class="hero-social-btn hero-social-tiktok">
+    <svg viewBox="0 0 24 24"><path d="M16.7 5.3a4.9 4.9 0 0 0 3.3 1.3V9a7.5 7.5 0 0 1-3.3-.8v6.7a6 6 0 1 1-6-6c.3 0 .7 0 1 .1v2.6a3.3 3.3 0 1 0 2.2 3.1V2h2.8a4.9 4.9 0 0 0 .1 3.3z"/></svg>
+  </a>
+  
+  <a href="https://www.snapchat.com/t/MSmug8rb"
+   target="_blank"
+   aria-label="Snapchat"
+   class="hero-social-btn hero-social-snapchat">
+
+  <svg viewBox="0 0 24 24">
+    <path d="M12 2c2.8 0 5 2.2 5 5v1.6c.6.4 1.4.8 2.2 1 .4.1.8.4.8.9 0 .4-.3.7-.7.9-.8.3-1.5.7-2.1 1.2-.3.3-.4.7-.3 1.1.2.8.6 1.6 1.2 2.3.3.3.4.8.2 1.2-.2.4-.6.6-1 .6-.8 0-1.5.2-2.2.5-.4.2-.8.4-1 .8-.4.6-1.1 1-2 1s-1.6-.4-2-1c-.2-.4-.6-.6-1-.8-.7-.3-1.4-.5-2.2-.5-.4 0-.8-.2-1-.6-.2-.4-.1-.9.2-1.2.6-.7 1-1.5 1.2-2.3.1-.4 0-.8-.3-1.1-.6-.5-1.3-.9-2.1-1.2-.4-.2-.7-.5-.7-.9 0-.5.4-.8.8-.9.8-.2 1.6-.6 2.2-1V7c0-2.8 2.2-5 5-5z"/>
+  </svg>
+</a>
+</div>
           <h1>Your local automotive repair specialists.</h1>
 
           <!-- Overlay logo -->
@@ -99,7 +121,7 @@
       <div class="section-head">
         <h2>Services</h2>
         <p>
-          Clear, professional servicing and repairs with straightforward advice. If you don’t see what you need,
+          Clear, professional servicing and repairs with straightforward advice. We have a wealth of mechanical experience with all manner of automobiles. If you don’t see what you need,
           send an inquiry — chances are we can help.
         </p>
       </div>
@@ -196,9 +218,9 @@
       </p>
 
       <div class="ticks">
-        <div class="tick">✔ Clear communication</div>
+        <div class="tick">✔ Fast turnaround</div>
         <div class="tick">✔ Fair pricing</div>
-        <div class="tick">✔ Quality workmanship</div>
+        <div class="tick">✔ Professional Invoicing</div>
       </div>
 
       <aside class="callout callout-below">
@@ -259,31 +281,60 @@
           </div>
         </div>
 
-        <form class="form card" action="#" method="post">
-          <label>
-            Name
-            <input name="name" type="text" placeholder="Your name" required />
-          </label>
+<form
+  id="inquiryForm"
+  class="form card"
+  action="https://formspree.io/f/mbddjakp"
+  method="POST"
+  novalidate
+>
+  <!-- Honeypot (spam trap) -->
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
 
-          <label>
-            Phone or Email
-            <input name="contact" type="text" placeholder="How can we reach you?" required />
-          </label>
+  <label>
+    Name
+    <input name="name" type="text" placeholder="Your name" required minlength="2" />
+  </label>
 
-          <label>
-            Vehicle details (Vehicle Registration)
-            <input name="vehicle" type="text" placeholder="e.g., 2020 Hilux SR5, ABC123" />
-          </label>
+  <label>
+    Phone or Email
+    <input name="contact" type="text" placeholder="How can we reach you?" required />
+  </label>
 
-          <label>
-            Message
-            <textarea name="message" rows="5" placeholder="What do you need done?" required></textarea>
-          </label>
+  <label>
+    Vehicle details (Vehicle Registration)
+    <input name="vehicle" type="text" placeholder="e.g., 2020 Hilux SR5" />
+  </label>
+  
+  <label>
+    Vehicle Registration
+    <input name="vehicle" type="text" placeholder="e.g., ABC123" />
+  </label>
 
-          <button class="btn" type="submit">Send</button>
-          
+  <label>
+    Service required
+    <select name="service" required>
+      <option value="" disabled selected>Select a service</option>
+      <option>Logbook Service</option>
+      <option>General Service</option>
+      <option>Brakes</option>
+      <option>Diagnostics</option>
+      <option>Suspension</option>
+      <option>Tyres</option>
+      <option>Battery / Electrical</option>
+      <option>Other</option>
+    </select>
+  </label>
 
-        </form>
+  <label>
+    Message
+    <textarea name="message" rows="5" placeholder="What do you need done?" required minlength="10"></textarea>
+  </label>
+
+  <button class="btn" id="submitBtn" type="submit">Send</button>
+
+  <p class="form-status" id="formStatus" aria-live="polite"></p>
+</form>
         
       </div>
     </section>
@@ -413,6 +464,65 @@
       });
     });
   </script>
-</body>
+  <script>
+(() => {
+  const form = document.getElementById("inquiryForm");
+  if (!form) return;
 
+  const statusEl = document.getElementById("formStatus");
+  const submitBtn = document.getElementById("submitBtn");
+
+  const setStatus = (msg, type) => {
+    if (!statusEl) return;
+    statusEl.textContent = msg;
+    statusEl.dataset.type = type || "";
+  };
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    // Browser validation
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    const formData = new FormData(form);
+
+    // Honeypot: if filled, silently drop
+    if (formData.get("_gotcha")) return;
+
+    submitBtn.disabled = true;
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = "Sending…";
+    setStatus("", "");
+
+    try {
+      const res = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: { "Accept": "application/json" }
+      });
+
+      if (res.ok) {
+        form.reset();
+        setStatus("Thanks — we’ve received your inquiry and will get back to you soon.", "success");
+      } else {
+        let msg = "Sorry — something went wrong. Please try again.";
+        try {
+          const data = await res.json();
+          if (data?.errors?.length) msg = data.errors.map(e => e.message).join(" ");
+        } catch (_) {}
+        setStatus(msg, "error");
+      }
+    } catch (err) {
+      setStatus("Network error — please check your connection and try again.", "error");
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalText;
+    }
+  });
+})();
+</script>
+</body>
 </html>
